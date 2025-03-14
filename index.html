@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMX Chat Rooms</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>HTMX Chat Rooms</h1>
+
+        <!-- User Input -->
+        <div class="user-input">
+            <p id="displayUser"><strong>Current User:</strong> <span>-</span></p>
+
+            <input type="text" id="currentUser" placeholder="Enter your name...">
+        </div>
+
+        <!-- Create Room -->
+        <div class="create-room">
+            <input type="text" id="roomName" placeholder="Room Name">
+            <button id="createRoomBtn">Create Room</button>
+        </div>
+
+        <!-- Chat Rooms List -->
+        <div id="chatRooms">
+            <h3>Available Chat Rooms</h3>
+            <div id="roomList"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

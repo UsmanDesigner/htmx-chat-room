@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+/* Container */
+.container {
+    width: 490px;
+    background: white;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Headings */
+h1 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Inputs & Buttons */
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+input {
+    background: #f9f9f9;
+}
+
+input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+button {
+    background: #667eea;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #555cd3;
+}
+
+/* User Display */
+#displayUser {
+    font-size: 14px;
+    color: #444;
+    background: #f3f4f6;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+/* Chat Room Container */
+#chatRooms {
+    margin-top: 20px;
+}
+
+#chatRooms h3 {
+    font-size: 18px;
+    color: #444;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Chat Room Boxes */
+.chat-room {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.chat-room:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.chat-room strong {
+    font-size: 16px;
+    color: #333;
+}
+
+.owner-label {
+    font-size: 12px;
+    color: green;
+    font-weight: bold;
+}
+
+/* Action Buttons */
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.actions button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.actions .join-btn {
+    background: #28a745;
+    color: white;
+}
+
+.actions .join-btn:hover {
+    background: #218838;
+}
+
+.actions .joined {
+    background: #6c757d;
+    cursor: default;
+    color: white;
+}
+
+.actions .edit-btn {
+    background: #ffc107;
+    color: white;
+}
+
+.actions .edit-btn:hover {
+    background: #e0a800;
+}
+
+.actions .delete-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.actions .delete-btn:hover {
+    background: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .chat-room {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .actions {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+}
