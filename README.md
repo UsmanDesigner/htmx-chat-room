@@ -68,14 +68,3 @@ This is a simple chat room application built using **HTML, CSS, JavaScript**, an
 - **JavaScript** – Dynamic Functionality  
 - **HTMX** – Lightweight AJAX  
 
----
-
-## 📌 Future Improvements
-🔹 Persistent storage (LocalStorage/Database)  
-🔹 Real-time updates using WebSockets  
-🔹 User authentication  
-
----
-
-### 👨‍💻 Developed By:  
-**[Your Name]**  
